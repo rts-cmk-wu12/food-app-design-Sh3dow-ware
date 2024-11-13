@@ -1,0 +1,54 @@
+
+/* Font Loaders */
+@font-face {
+     /* Lobster font */
+    font-family: "Lobster";
+    src: url(../fonts/Lobster.otf) format("opentype");
+}
+
+
+@font-face {
+      /* Poppins font */
+      font-family: "Poppins";
+      src: url(../fonts/Poppins.ttf) format("truetype");
+}
+
+
+@font-face {
+    /* Roboto font */
+    font-family: "Roboto";
+    src: url(../fonts/Roboto.ttf) format("truetype");
+}
+
+
+/* Variables */
+
+:root {
+    /* Color Scheme */
+    --RedColor: #EF2A39;
+    --WhiteColor: #FFFFFF;
+    --BlackColor: #3C2F2F;
+    --LightGrayColor: #6A6A6A;
+    /* Font Types */
+    --LobsterFont: "Lobster";
+    --PoppinsFont: "Poppins";
+    --RobotoFont: "Roboto";
+}
+
+
+/* Fonts */
+
+
+.poppins {
+    font-family: var(--PoppinsFont);
+}
+
+
+.lobster {
+    font-family: var(--LobsterFont);
+}
+
+
+.roboto {
+    font-family: var(--RobotoFont);
+}

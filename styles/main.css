@@ -1,0 +1,12 @@
+/* Style loaders */
+@import url(reset.css);
+@import url(variables.css);
+@import url(components.css);
+/* ------------------------ */
+
+
+
+
+.nav__title {
+    font-size: 2.813em;
+}

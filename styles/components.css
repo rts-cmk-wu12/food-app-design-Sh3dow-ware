@@ -1,0 +1,161 @@
+
+/* Body */
+body {
+    display: grid;
+    min-height: 100vh;
+}
+
+
+/* Navigation */
+
+
+header {
+    padding: 20px;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.nav__filter, .nav__search {
+    display: grid;
+    grid-row: 3;
+    align-items: center;
+}
+
+.search {
+    max-width: 320px;
+    width: 100%;
+    padding-left: 30px;
+    height: 60px;
+    grid-area: 1/1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.1);
+}
+
+.search__icon  {
+    padding: 10px;
+    grid-area: 1/1;
+}
+
+.nav__profile {
+    max-height: 60px;
+    max-width: 50px;
+    border-radius: 20px;
+}
+
+
+.nav__filter {
+    max-height: 60px;
+    max-width: 50px;
+}
+
+
+/* Main */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 2em;
+    padding: 20px;
+}
+
+.card {
+    max-height: 400px;
+    height: 250px;
+    max-width: 200px;
+    width: 100%;
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.1);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transition: 100ms;
+    scale: 1.5;
+}
+
+.card:not(:hover) {
+    transition: 100ms;
+    scale: 1;
+}
+
+
+.card__img {
+   height: 70%;
+   width: 100%;
+   object-fit: contain;
+}
+
+
+.card__stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__follow {
+    font-size: 1.5em;
+}
+
+.fa-star {
+    color: #FF9633
+}
+
+
+.card__rating {
+    font-weight:bold;
+}
+
+/* Footer style */
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  align-self: end;
+  width: 100%;
+  height: 100px;
+  background-image: url(../svg/footer.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.footer__icon {
+    font-size: 24px;
+    color: white;
+}
+
+.footer__add {
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 50px;
+    top: 20%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: var(--RedColor);
+}
+
+
+
+
+
+
+@media (pointer: coarse) {
+    .card:hover {
+        scale: inherit;
+    }
+}
